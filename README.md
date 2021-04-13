@@ -1,1 +1,1 @@
-# rock-paper-scissors
+This is a project for the game rock paper scissors which is run in the terminal.
