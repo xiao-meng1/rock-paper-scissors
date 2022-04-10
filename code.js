@@ -1,9 +1,9 @@
 function computerPlay() {
-    const random_number = Math.floor(Math.random()*3)+1;
-    if (random_number ===1){
+    const randomNumber = Math.floor(Math.random()*3)+1;
+    if (randomNumber ===1){
         return "rock";
     }
-    else if (random_number === 2) {
+    else if (randomNumber === 2) {
         return "paper";
     }
     else {
@@ -13,10 +13,10 @@ function computerPlay() {
 
 function userPlay() {
     while (true){
-        const player_selection = prompt("Choose rock, paper, or scissors.").toLowerCase();
-        if (player_selection === "rock" || player_selection === "paper" || 
-                player_selection === "scissors"){
-            return player_selection;
+        const playerSelection = prompt("Choose rock, paper, or scissors.").toLowerCase();
+        if (playerSelection === "rock" || playerSelection === "paper" || 
+                playerSelection === "scissors"){
+            return playerSelection;
         }
         else {
             alert('Please type "rock", "paper", or "scissors"!')
@@ -72,8 +72,7 @@ function playRound() {
 function game() {
     let userScore = 0;
     let computerScore = 0;
-    let i;
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         let winner = playRound();
         if (winner === "user") {
             userScore += 1;
