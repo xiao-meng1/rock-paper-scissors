@@ -1,1 +1,1 @@
-This is a project for the game rock paper scissors which is run in the terminal.
+This is a project for the game rock paper scissors which is run in the terminal. Check it out [here](https://xiao-meng1.github.io/rock-paper-scissors/).

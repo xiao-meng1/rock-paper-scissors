@@ -48,7 +48,7 @@ function playRound(userSelection) {
     }
     displayResult(winner, userSelection, computerSelection);
     changeScore(winner);
-    checkEndGame();
+    checkEndGame(winner);
 }
 
 function addButtonEvents() {
@@ -95,7 +95,7 @@ function changeScore(winner) {
     }
 }
 
-function checkEndGame() {
+function checkEndGame(winner) {
     const userScore = document.querySelector("#user-score");
     const computerScore = document.querySelector("#computer-score");
     if (Number(userScore.textContent) === 5 || Number(computerScore.textContent) === 5){
